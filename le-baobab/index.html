@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Le Baobab — Restaurant & Grill à Kinshasa</title>
+  <meta name="description" content="Le Baobab, restaurant & grill à Gombe, Kinshasa. Cuisine congolaise revisitée, grillades au feu de bois, terrasse ombragée. Réservez votre table.">
+  <meta property="og:title" content="Le Baobab — Restaurant & Grill, Kinshasa">
+  <meta property="og:description" content="Cuisine congolaise revisitée et grillades au feu de bois. Réservez votre table à Gombe.">
+  <meta property="og:type" content="restaurant">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍽️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Aller au contenu</a>
+
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="#accueil" class="logo" aria-label="Accueil Le Baobab">
+        <span class="logo-mark" aria-hidden="true">🌳</span>
+        <span class="logo-text">Le Baobab<small>Restaurant &amp; Grill</small></span>
+      </a>
+
+      <nav class="nav" aria-label="Navigation principale">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Ouvrir le menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#accueil" class="nav-link">Accueil</a></li>
+          <li><a href="#carte" class="nav-link">La carte</a></li>
+          <li><a href="#maison" class="nav-link">La maison</a></li>
+          <li><a href="#avis" class="nav-link">Avis</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li><a href="#reservation" class="btn btn-primary nav-cta">Réserver</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section id="accueil" class="hero">
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-text reveal">
+          <p class="eyebrow">Gombe · Kinshasa · Depuis 2014</p>
+          <h1>La cuisine congolaise,<br>au feu de bois</h1>
+          <p class="hero-sub">Des recettes de famille revisitées avec soin, des grillades au charbon, une terrasse ombragée sous les manguiers. Bienvenue au Baobab.</p>
+          <div class="hero-actions">
+            <a href="#reservation" class="btn btn-primary">Réserver une table</a>
+            <a href="#carte" class="btn btn-ghost">Voir la carte</a>
+          </div>
+          <ul class="hero-badges" role="list">
+            <li>🔥 Grillades au charbon</li>
+            <li>🕒 Ouvert 7j/7</li>
+            <li>🅿️ Parking gratuit</li>
+          </ul>
+        </div>
+        <div class="hero-card reveal">
+          <p class="hero-card-title">Ce soir au Baobab</p>
+          <p class="hero-card-dish">Poulet Moambe</p>
+          <p class="hero-card-desc">Poulet fermier, sauce à la noix de palme, riz parfumé, bananes plantains.</p>
+          <p class="hero-card-price">28 000 <small>CDF</small></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- LA CARTE -->
+    <section id="carte" class="section menu-section">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">La carte</p>
+          <h2>Ce que nous servons</h2>
+          <p class="section-sub">Une cuisine de saison, préparée chaque jour avec des produits frais du marché de la Gombe. Prix affichés en francs congolais.</p>
+        </header>
+
+        <div class="filters reveal" role="group" aria-label="Filtrer la carte">
+          <button class="chip is-active" data-filter="all">Tout</button>
+          <button class="chip" data-filter="Entrées">Entrées</button>
+          <button class="chip" data-filter="Plats">Plats</button>
+          <button class="chip" data-filter="Grillades">Grillades</button>
+          <button class="chip" data-filter="Desserts">Desserts</button>
+          <button class="chip" data-filter="Boissons">Boissons</button>
+        </div>
+
+        <div class="menu-grid" id="menu-grid" aria-live="polite"></div>
+        <p class="menu-empty" id="menu-empty" hidden>Aucun plat dans cette catégorie pour le moment.</p>
+      </div>
+    </section>
+
+    <!-- LA MAISON -->
+    <section id="maison" class="section about">
+      <div class="container about-inner">
+        <div class="about-text reveal">
+          <p class="eyebrow">La maison</p>
+          <h2>Trois générations, une seule recette : le goût vrai</h2>
+          <p>Le Baobab est né d'une idée simple : servir à Kinshasa une cuisine congolaise qui respecte ses produits et ses traditions, dans un cadre qui donne envie de rester.</p>
+          <p>Nos légumes viennent du marché central chaque matin. Nos viandes sont choisies chez des bouchers de confiance. Nos épices sont préparées maison. Rien d'industriel, rien de congelé — sauf nos glaces, et on l'assume.</p>
+        </div>
+        <ul class="values" role="list">
+          <li class="value-card reveal">
+            <span class="value-icon" aria-hidden="true">🌿</span>
+            <h3>Produits frais</h3>
+            <p>Marché chaque matin, aucune conserve industrielle.</p>
+          </li>
+          <li class="value-card reveal">
+            <span class="value-icon" aria-hidden="true">🔥</span>
+            <h3>Feu de bois</h3>
+            <p>Nos grillades sont cuites au charbon, comme il se doit.</p>
+          </li>
+          <li class="value-card reveal">
+            <span class="value-icon" aria-hidden="true">👨🏾‍🍳</span>
+            <h3>Recettes de famille</h3>
+            <p>Trois générations de cuisiniers, un carnet secret.</p>
+          </li>
+          <li class="value-card reveal">
+            <span class="value-icon" aria-hidden="true">🌳</span>
+            <h3>Terrasse ombragée</h3>
+            <p>40 couverts à l'ombre des manguiers, au calme.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- GALERIE -->
+    <section id="galerie" class="section gallery-section">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Ambiance</p>
+          <h2>Un avant-goût</h2>
+        </header>
+        <div class="gallery reveal">
+          <div class="gallery-tile tile-1"><span>🥘</span><p>Notre Moambe signature</p></div>
+          <div class="gallery-tile tile-2"><span>🌳</span><p>La terrasse aux manguiers</p></div>
+          <div class="gallery-tile tile-3"><span>🔥</span><p>Le grill au charbon</p></div>
+          <div class="gallery-tile tile-4"><span>🍹</span><p>Nos cocktails maison</p></div>
+          <div class="gallery-tile tile-5"><span>🍽️</span><p>La salle intérieure</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RÉSERVATION -->
+    <section id="reservation" class="section reservation">
+      <div class="container reservation-inner">
+        <div class="reservation-text reveal">
+          <p class="eyebrow">Réservation</p>
+          <h2>Réservez votre table</h2>
+          <p>Nous vous confirmons votre réservation par téléphone ou WhatsApp dans l'heure. Pour les groupes de plus de 8 personnes, appelez-nous directement.</p>
+          <ul class="contact-list" role="list">
+            <li><span class="contact-icon" aria-hidden="true">📞</span><div><strong>Téléphone / WhatsApp</strong><br>+243 000 000 000</div></li>
+            <li><span class="contact-icon" aria-hidden="true">🕒</span><div><strong>Horaires</strong><br>Lun–Dim · 11h30 à 23h00</div></li>
+            <li><span class="contact-icon" aria-hidden="true">📍</span><div><strong>Adresse</strong><br>Av. des Manguiers, Gombe, Kinshasa</div></li>
+          </ul>
+        </div>
+
+        <form class="reservation-form reveal" id="reservation-form" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="res-name">Nom complet</label>
+              <input type="text" id="res-name" name="name" autocomplete="name" required>
+              <p class="field-error" id="res-name-error" hidden>Merci d'indiquer votre nom (2 caractères min.).</p>
+            </div>
+            <div class="field">
+              <label for="res-phone">Téléphone</label>
+              <input type="tel" id="res-phone" name="phone" autocomplete="tel" required>
+              <p class="field-error" id="res-phone-error" hidden>Merci d'indiquer un numéro valide (8 chiffres min.).</p>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="res-date">Date</label>
+              <input type="date" id="res-date" name="date" required>
+              <p class="field-error" id="res-date-error" hidden>Merci de choisir une date à partir d'aujourd'hui.</p>
+            </div>
+            <div class="field">
+              <label for="res-time">Heure</label>
+              <select id="res-time" name="time" required>
+                <option value="">— Choisir —</option>
+              </select>
+              <p class="field-error" id="res-time-error" hidden>Merci de choisir une heure.</p>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="res-guests">Nombre de personnes</label>
+              <select id="res-guests" name="guests" required>
+                <option value="">— Choisir —</option>
+                <option value="1">1 personne</option>
+                <option value="2">2 personnes</option>
+                <option value="3">3 personnes</option>
+                <option value="4">4 personnes</option>
+                <option value="5">5 personnes</option>
+                <option value="6">6 personnes</option>
+                <option value="7">7 personnes</option>
+                <option value="8">8 personnes</option>
+              </select>
+              <p class="field-error" id="res-guests-error" hidden>Merci d'indiquer le nombre de personnes.</p>
+            </div>
+            <div class="field">
+              <label for="res-occasion">Occasion <span class="optional">(optionnel)</span></label>
+              <select id="res-occasion" name="occasion">
+                <option value="">— Aucune —</option>
+                <option value="anniversaire">Anniversaire</option>
+                <option value="affaires">Déjeuner d'affaires</option>
+                <option value="famille">Repas de famille</option>
+                <option value="romantique">Dîner romantique</option>
+                <option value="autre">Autre</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="res-message">Message <span class="optional">(optionnel)</span></label>
+            <textarea id="res-message" name="message" rows="3" placeholder="Allergies, table en terrasse, gâteau d'anniversaire…"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Demander la réservation</button>
+          <p class="form-success" id="res-success" hidden>Merci ! Votre demande a bien été envoyée. Nous vous confirmons votre table dans l'heure par téléphone ou WhatsApp.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- AVIS -->
+    <section id="avis" class="section testimonials">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Ils sont venus</p>
+          <h2>Avis des clients</h2>
+        </header>
+
+        <div class="carousel reveal" aria-roledescription="carrousel" aria-label="Avis clients">
+          <div class="carousel-viewport">
+            <ul class="carousel-track" id="carousel-track" role="list"></ul>
+          </div>
+          <div class="carousel-controls">
+            <button class="carousel-btn" id="carousel-prev" aria-label="Avis précédent">‹</button>
+            <div class="carousel-dots" id="carousel-dots"></div>
+            <button class="carousel-btn" id="carousel-next" aria-label="Avis suivant">›</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section faq">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Questions fréquentes</p>
+          <h2>Vous vous demandez…</h2>
+        </header>
+        <div class="accordion" id="accordion">
+          <div class="accordion-item">
+            <h3><button class="accordion-btn" aria-expanded="false">Faut-il réserver ?<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+            <div class="accordion-panel"><p>Ce n'est pas obligatoire en semaine, mais fortement conseillé le week-end, surtout pour la terrasse. Réservez en ligne ou par téléphone.</p></div>
+          </div>
+          <div class="accordion-item">
+            <h3><button class="accordion-btn" aria-expanded="false">Avez-vous des plats végétariens ?<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+            <div class="accordion-panel"><p>Oui : le Fumbwa aux arachides, le riz sauté aux légumes, et plusieurs entrées peuvent être adaptées. Signalez-le à votre serveur.</p></div>
+          </div>
+          <div class="accordion-item">
+            <h3><button class="accordion-btn" aria-expanded="false">Acceptez-vous les groupes ?<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+            <div class="accordion-panel"><p>Oui, jusqu'à 40 personnes. Pour les groupes de plus de 8, appelez-nous directement afin que nous organisions la salle et le menu.</p></div>
+          </div>
+          <div class="accordion-item">
+            <h3><button class="accordion-btn" aria-expanded="false">Y a-t-il un parking ?<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+            <div class="accordion-panel"><p>Oui, un parking gratuit et gardé est disponible à l'arrière du restaurant, accessible depuis la rue perpendiculaire.</p></div>
+          </div>
+          <div class="accordion-item">
+            <h3><button class="accordion-btn" aria-expanded="false">Quels moyens de paiement acceptez-vous ?<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+            <div class="accordion-panel"><p>Espèces (CDF et USD), Mobile Money, et carte bancaire Visa/Mastercard.</p></div>
+          </div>
+          <div class="accordion-item">
+            <h3><button class="accordion-btn" aria-expanded="false">Faites-vous de la livraison ?<span class="accordion-icon" aria-hidden="true"></span></button></h3>
+            <div class="accordion-panel"><p>Oui, dans un rayon de 5 km autour de la Gombe, sur commande WhatsApp. Frais de livraison : 3 000 CDF.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="container contact-inner">
+        <div class="reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>Venez nous voir</h2>
+          <p>Que ce soit pour un déjeuner d'affaires, un dîner en famille ou un anniversaire, la maison vous attend.</p>
+          <ul class="contact-list" role="list">
+            <li><span class="contact-icon" aria-hidden="true">📍</span><div><strong>Adresse</strong><br>Av. des Manguiers, Gombe<br>Kinshasa, RDC</div></li>
+            <li><span class="contact-icon" aria-hidden="true">📞</span><div><strong>Téléphone</strong><br>+243 000 000 000</div></li>
+            <li><span class="contact-icon" aria-hidden="true">✉️</span><div><strong>Email</strong><br>bonjour@lebaobab.cd</div></li>
+            <li><span class="contact-icon" aria-hidden="true">🕒</span><div><strong>Horaires</strong><br>Lundi – Dimanche · 11h30 – 23h00</div></li>
+          </ul>
+        </div>
+        <div class="map-placeholder reveal" aria-label="Carte de localisation (décorative)">
+          <span aria-hidden="true">📍 Gombe, Kinshasa</span>
+          <small>Plan interactif à venir</small>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#accueil" class="logo logo-footer">
+          <span class="logo-mark" aria-hidden="true">🌳</span>
+          <span class="logo-text">Le Baobab<small>Restaurant &amp; Grill</small></span>
+        </a>
+        <p>Cuisine congolaise revisitée et grillades au feu de bois, au cœur de la Gombe.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Liens rapides">
+        <h3>Navigation</h3>
+        <ul role="list">
+          <li><a href="#carte">La carte</a></li>
+          <li><a href="#maison">La maison</a></li>
+          <li><a href="#reservation">Réserver</a></li>
+          <li><a href="#avis">Avis</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="footer-social">
+        <h3>Suivez-nous</h3>
+        <ul class="social-links" role="list">
+          <li><a href="#" aria-label="Facebook">f</a></li>
+          <li><a href="#" aria-label="Instagram">◎</a></li>
+          <li><a href="#" aria-label="TikTok">♪</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Le Baobab — Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" aria-label="Retour en haut" hidden>↑</button>
+  <a href="https://wa.me/243000000000" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Nous contacter sur WhatsApp">💬</a>
+
+  <!-- MODAL PLAT -->
+  <div class="modal" id="dish-modal" role="dialog" aria-modal="true" aria-labelledby="dish-modal-title" hidden>
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-content" role="document">
+      <button class="modal-close" id="modal-close" aria-label="Fermer">✕</button>
+      <div class="modal-media" id="dish-modal-media"></div>
+      <div class="modal-body">
+        <div class="modal-head">
+          <h2 id="dish-modal-title"></h2>
+          <span class="dish-price" id="dish-modal-price"></span>
+        </div>
+        <p class="dish-cat" id="dish-modal-cat"></p>
+        <p id="dish-modal-desc"></p>
+        <p class="dish-allergens" id="dish-modal-allergens"></p>
+        <a href="#reservation" class="btn btn-primary btn-block" data-close-modal>Réserver une table</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
